@@ -17,15 +17,15 @@ import numpy as np
 #
 
 
-def processStepHalf(q, n):
-    a, b, k = q
-    arr = [0] * n
-    start = a - 1
-    if q != [0, 0, 0]:
-        if start < 0:
-            start = 0
-        arr = arr[:start] + [k] * (b-a+1) + arr[b:]
-    return arr
+# def processStepHalf(q, n):
+#     a, b, k = q
+#     arr = [0] * n
+#     start = a - 1
+#     if q != [0, 0, 0]:
+#         if start < 0:
+#             start = 0
+#         arr = arr[:start] + [k] * (b-a+1) + arr[b:]
+#     return arr
 
 
 def arrayManipulation(n, queries):
